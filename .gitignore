@@ -1,0 +1,8 @@
+# Ren'py log files, not worth committing.
+errors.txt
+log.txt
+traceback.txt
+
+# Python bytecode files
+/game/*.rpyc
+/game/*.pyc
