@@ -55,8 +55,8 @@ label start:
         ":)"
     
     "Vamos a testear el script."
-    
-    $ math_exe("romanos")
+    while True:
+        $ math_incisos(difficulty("hard"))
 
     # Finaliza el juego:
 

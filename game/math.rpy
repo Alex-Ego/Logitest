@@ -7,7 +7,7 @@ init offset = -1
 init python:
     import codecs
     import random
-    def math_exe(tema):
+    def math_incisos(tema):
         with renpy.file("minigames/math/" + tema + ".txt") as f:
             lines = f.readlines()
             prompts = lines[0].strip().decode('utf-8').split(",")
@@ -29,4 +29,11 @@ init python:
             narrator("¡Correcto!")
         else:
             narrator("Buuuuuuuu...")
+    
+    def difficulty(level):
+        random.seed()
+        if level == "easy":
+            return((random.choice(["areas", "romanos"])))
+        else:
+            return(random.choice(["areas", "conversiones", "factorizacion", "romanos"]))
 
