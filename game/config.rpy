@@ -1,5 +1,5 @@
 ﻿################################################################################
-## Inicialización
+## Configuración
 ################################################################################
 
 ## La sentencia 'init offset' da preferencia a las sentencias de inicialización
