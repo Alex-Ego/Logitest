@@ -23,11 +23,25 @@ label start:
     show peon 1:
         function pos2
     
+    call c6
+    
     "Ahora te mueves."
     
-    "Vamos a testear el script."
-    while True:
-        $ math_incisos(difficulty("hard"))
+    $ diceRoll()
+    
+    "Oh mira, un dado"
+    
+    hide dice
+    
+    "A ver qué pasa si lo lanzamos otra vez"
+    
+    $ movement("c1", diceRoll())
+    
+    "Wow."
+    
+    "Bueno, a ver"
+    
+    $ math_incisos("areas")
 
     # Finaliza el juego:
 

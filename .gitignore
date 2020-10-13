@@ -6,3 +6,6 @@ traceback.txt
 # Python bytecode files
 /game/*.rpyc
 /game/*.pyc
+
+# CSP stuff is just in case I need to edit locally
+*.clip
