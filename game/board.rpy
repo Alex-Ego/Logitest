@@ -4,167 +4,199 @@
 
 ## La sentencia 'init offset' da preferencia a las sentencias de inicialización
 ## de este archivo respecto a otros archivos.
-init offset = -5
+init offset = -4
 
 label inicio:
     show peon 1:
         linear 0.2, function pos1
     $ current_pos = 0
+    $ movement(fullboard[current_pos], diceRoll())
         
 label c1:
     show peon 1:
         linear 0.2, function pos2
     $ current_pos = 1
+    $ movement(fullboard[current_pos], diceRoll())
         
 label c2:
     show peon 1:
         linear 0.2, function pos3
     $ current_pos = 2
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c3:
     show peon 1:
         linear 0.2, function pos4
     $ current_pos = 3
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c4:
     show peon 1:
         linear 0.2, function pos5
     $ current_pos = 4
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c5:
     show peon 1:
         linear 0.2, function pos6
     $ current_pos = 5
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c6:
     show peon 1:
         linear 0.2, function pos7
     $ current_pos = 6
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c7:
     show peon 1:
         linear 0.2, function pos8
     $ current_pos = 7
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c8:
     show peon 1:
         linear 0.2, function pos9
     $ current_pos = 8
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c9:
     show peon 1:
         linear 0.2, function pos10
     $ current_pos = 9
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c10:
     show peon 1:
         linear 0.2, function pos11
     $ current_pos = 10
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c11:
     show peon 1:
         linear 0.2, function pos12
     $ current_pos = 11
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c12:
     show peon 1:
         linear 0.2, function pos13
     $ current_pos = 12
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c13:
     show peon 1:
         linear 0.2, function pos14
     $ current_pos = 13
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c14:
     show peon 1:
         linear 0.2, function pos15
     $ current_pos = 14
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c15:
     show peon 1:
         linear 0.2, function pos16
     $ current_pos = 15
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c16:
     show peon 1:
         linear 0.2, function pos17
     $ current_pos = 16
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c17:
     show peon 1:
         linear 0.2, function pos18
     $ current_pos = 17
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c18:
     show peon 1:
         linear 0.2, function pos19
     $ current_pos = 18
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c19:
     show peon 1:
         linear 0.2, function pos20
     $ current_pos = 19
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c20:
     show peon 1:
         linear 0.2, function pos21
     $ current_pos = 20
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c21:
     show peon 1:
         linear 0.2, function pos22
     $ current_pos = 21
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c22:
     show peon 1:
         linear 0.2, function pos23
     $ current_pos = 22
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c23:
     show peon 1:
         linear 0.2, function pos24
     $ current_pos = 23
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c24:
     show peon 1:
         linear 0.2, function pos25
     $ current_pos = 24
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c25:
     show peon 1:
         linear 0.2, function pos26
     $ current_pos = 25
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c26:
     show peon 1:
         linear 0.2, function pos27
     $ current_pos = 26
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c27:
     show peon 1:
         linear 0.2, function pos28
     $ current_pos = 27
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c28:
     show peon 1:
         linear 0.2, function pos29
     $ current_pos = 28
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c29:
     show peon 1:
         linear 0.2, function pos30
     $ current_pos = 29
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c30:
     show peon 1:
         linear 0.2, function pos31
     $ current_pos = 30
-        
+    $ movement(fullboard[current_pos], diceRoll())
+
 label c31:
     show peon 1:
         linear 0.2, function pos32
     $ current_pos = 31
+    $ movement(fullboard[current_pos], diceRoll())
 
 
 init python:

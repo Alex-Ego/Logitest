@@ -37,11 +37,13 @@ label start:
     
     $ movement("c1", diceRoll())
     
-    "Wow."
+    "Basado"
     
-    "Bueno, a ver"
+    #"Wow."
     
-    $ math_incisos("areas")
+    #"Bueno, a ver"
+    
+    #$ math_incisos("areas")
 
     # Finaliza el juego:
 
