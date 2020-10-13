@@ -20,5 +20,3 @@ init python:
         random.seed()
         Drag("row1")
         renpy.show("memorygame", at_list=[Transform(zoom = 0.25), truecenter])
-        
-
