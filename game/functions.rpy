@@ -29,6 +29,10 @@ label show_tickets:
     $ tickets = True
     show screen tickets
     "¡Obtuviste un ticket de pase!"
+    
+label score_counting:
+    show screen score_count(score)
+
 
 init -5 python:
     import random
@@ -61,7 +65,7 @@ init -5 python:
         new = (fullboard.index(current) + diceroll)
         if new > 31:
             new = new % 32
-        renpy.call(fullboard[new])
+        renpy.jump(fullboard[new])
     
     def minigame(diff):
         global score
@@ -90,7 +94,7 @@ init -5 python:
         else:
             renpy.say(None, "¡Correcto!")
             score = score + 1
-        renpy.say(None, "Puntaje actual: " + str(score))
+        renpy.call("score_counting")
     
     def passticket():
         global tickets

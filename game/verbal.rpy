@@ -45,7 +45,7 @@ init python:
         renpy.show("libro " + str(exercise[2]), at_list=[Position(xalign = 0.85, yalign = 0.5)])
         
         question = random.randrange(0, len(exercise[0]))
-        ans = str(renpy.input(exercise[0][question] + " (No utilice acentos en su respuesta)"))
+        ans = str(renpy.input(exercise[0][question] + " (No utilices acentos en tu respuesta)"))
         ans = ans.strip()
         renpy.hide("libro " + str(exercise[2]))
         if ans.lower() == str(exercise[1][question]).lower():

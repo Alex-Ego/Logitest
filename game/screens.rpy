@@ -162,9 +162,9 @@ style say_dialogue:
 
 ## Pantalla de tickets #########################################################
 ##
-## Pantalla que mostrará si tienes tickets y cuando los puedas usar
+## 
 ##
-##
+##  Pantalla que mostrará si tienes tickets y cuando los puedas usar
 ##
 ##
 ##
@@ -177,6 +177,13 @@ screen tickets():
             imagebutton auto "passticket_%s.png" action None
             
 default tickets = False
+
+screen score_count(score):
+    zorder -10
+    hbox xalign 0.15 yalign 0.25:
+        text "Puntos:" size 40 color "FFFFFF"
+        $ score_str = str(score)
+        text score_str size 40 color "FFFFFF"
     
 
 ## Pantalla de introducción de texto ###########################################
@@ -271,15 +278,6 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Atrás") action Rollback()
-            textbutton _("Historial") action ShowMenu('history')
-            textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Guardar") action ShowMenu('save')
-            textbutton _("Guardar R.") action QuickSave()
-            textbutton _("Cargar R.") action QuickLoad()
-            textbutton _("Prefs.") action ShowMenu('preferences')
-
 
 ## Este código asegura que la pantalla 'quick_menu' se muestra en el juego,
 ## mientras el jugador no haya escondido explícitamente la interfaz.
@@ -311,10 +309,9 @@ screen navigation():
 
     vbox:
         style_prefix "navigation"
-
-        xalign 0.5
-        yalign 1.0
-        yoffset -80
+        
+        xalign 0.07
+        yalign 0.5
         
         spacing gui.navigation_spacing
 
@@ -326,9 +323,6 @@ screen navigation():
 
             textbutton _("Historial") action ShowMenu("history")
 
-            textbutton _("Guardar") action ShowMenu("save")
-
-        textbutton _("Cargar") action ShowMenu("load")
 
         textbutton _("Opciones") action ShowMenu("preferences")
 
@@ -624,56 +618,12 @@ screen load():
 
 screen file_slots(title):
 
-    default page_name_value = FilePageNameInputValue(pattern=_("Página {}"), auto=_("Grabación automática"), quick=_("Grabación rápida"))
+    default page_name_value = "Menú"
 
-    use game_menu(title):
+    use game_menu("Menú"):
 
         fixed:
 
-            ## Esto asegura que 'input' recibe el evento 'enter' antes que otros
-            ## botones.
-            order_reverse True
-
-            ## El nombre de la pagina, se puede editar haciendo clic en el
-            ## botón.
-            button:
-                style "page_label"
-
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
-
-                input:
-                    style "page_label_text"
-                    value page_name_value
-
-            ## La cuadrícula de huecos de guardado.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
-
-                xalign 0.5
-                yalign 0.5
-
-                spacing gui.slot_spacing
-
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
-
-                    $ slot = i + 1
-
-                    button:
-                        action FileAction(slot)
-
-                        has vbox
-
-                        add FileScreenshot(slot) xalign 0.5
-
-                        text FileTime(slot, format=_("{#file_time}%A, %d de %B %Y, %H:%M"), empty=_("vacío")):
-                            style "slot_time_text"
-
-                        text FileSaveName(slot):
-                            style "slot_name_text"
-
-                        key "save_delete" action FileDelete(slot)
 
             ## Botones de acceso a otras páginas
             hbox:
@@ -681,22 +631,6 @@ screen file_slots(title):
 
                 xalign 0.5
                 yalign 1.0
-
-                spacing gui.page_spacing
-
-                textbutton _("<") action FilePagePrevious()
-
-                if config.has_autosave:
-                    textbutton _("{#auto_page}A") action FilePage("auto")
-
-                if config.has_quicksave:
-                    textbutton _("{#quick_page}R") action FilePage("quick")
-
-                ## range(1, 10) da los numeros del 1 al 9.
-                for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
-
-                textbutton _(">") action FilePageNext()
 
 
 style page_label is gui_label
