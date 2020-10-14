@@ -131,7 +131,7 @@ style namebox_label is say_label
 
 
 style window:
-    xalign 0.5
+    xalign gui.textbox_xalign
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
@@ -173,7 +173,7 @@ style say_dialogue:
 screen tickets():
     zorder -10
     if tickets:
-        hbox xoffset 150 yalign .7:
+        hbox xoffset 150 yalign .5:
             imagebutton auto "passticket_%s.png" action None
             
 default tickets = False
@@ -207,7 +207,7 @@ screen input(prompt):
             xsize gui.dialogue_width
             ypos gui.dialogue_ypos
 
-            text prompt style "input_prompt"
+            text prompt style "input_prompt" color "#FFFFFF"
             input id "input"
 
 style input_prompt is default
@@ -215,6 +215,7 @@ style input_prompt is default
 style input_prompt:
     xalign gui.dialogue_text_xalign
     properties gui.text_properties("input_prompt")
+    
 
 style input:
     xalign gui.dialogue_text_xalign

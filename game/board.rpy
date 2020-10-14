@@ -11,7 +11,7 @@ label inicio:
     show peon 1:
         linear 0.2, function pos1
     $ current_pos = 0
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -24,7 +24,7 @@ label c1:
         linear 0.2, function pos2
     $ current_pos = 1
     $ minigame("easy")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -36,7 +36,7 @@ label c2:
         linear 0.2, function pos3
     $ current_pos = 2
     $ minigame("medium")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -48,7 +48,7 @@ label c3:
         linear 0.2, function pos4
     $ current_pos = 3
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -60,7 +60,7 @@ label c4:
         linear 0.2, function pos5
     $ current_pos = 4
     $ minigame("easy")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -72,7 +72,7 @@ label c5:
         linear 0.2, function pos6
     $ current_pos = 5
     $ passticket()
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -83,7 +83,7 @@ label c6:
         linear 0.2, function pos7
     $ current_pos = 6
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -95,7 +95,7 @@ label c7:
         linear 0.2, function pos8
     $ current_pos = 7
     $ minigame("easy")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -107,7 +107,7 @@ label c8:
         linear 0.2, function pos9
     $ current_pos = 8
     $ passticket()
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -119,7 +119,7 @@ label c9:
         linear 0.2, function pos10
     $ current_pos = 9
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -130,7 +130,7 @@ label c10:
     show peon 1:
         linear 0.2, function pos11
     $ current_pos = 10
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -142,7 +142,7 @@ label c11:
         linear 0.2, function pos12
     $ current_pos = 11
     $ minigame("medium")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -154,7 +154,7 @@ label c12:
         linear 0.2, function pos13
     $ current_pos = 12
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -166,7 +166,7 @@ label c13:
         linear 0.2, function pos14
     $ current_pos = 13
     $ minigame("easy")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -178,7 +178,7 @@ label c14:
         linear 0.2, function pos15
     $ current_pos = 14
     $ minigame("medium")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -190,7 +190,7 @@ label c15:
         linear 0.2, function pos16
     $ current_pos = 15
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -202,7 +202,7 @@ label c16:
         linear 0.2, function pos17
     $ current_pos = 16
     $ minigame("easy")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -214,7 +214,7 @@ label c17:
         linear 0.2, function pos18
     $ current_pos = 17
     $ passticket()
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -225,7 +225,7 @@ label c18:
     show peon 1:
         linear 0.2, function pos19
     $ current_pos = 18
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -237,7 +237,7 @@ label c19:
         linear 0.2, function pos20
     $ current_pos = 19
     $ minigame("easy")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -249,7 +249,7 @@ label c20:
         linear 0.2, function pos21
     $ current_pos = 20
     $ minigame("medium")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -261,7 +261,7 @@ label c21:
         linear 0.2, function pos22
     $ current_pos = 21
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -273,7 +273,7 @@ label c22:
         linear 0.2, function pos23
     $ current_pos = 22
     $ minigame("easy")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -285,7 +285,7 @@ label c23:
         linear 0.2, function pos24
     $ current_pos = 23
     $ minigame("medium")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -297,7 +297,7 @@ label c24:
         linear 0.2, function pos25
     $ current_pos = 24
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -309,7 +309,7 @@ label c25:
         linear 0.2, function pos26
     $ current_pos = 25
     $ passticket()
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -321,7 +321,7 @@ label c26:
         linear 0.2, function pos27
     $ current_pos = 26
     $ minigame("medium")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -333,7 +333,7 @@ label c27:
         linear 0.2, function pos28
     $ current_pos = 27
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -345,7 +345,7 @@ label c28:
         linear 0.2, function pos29
     $ current_pos = 28
     $ minigame("easy")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -357,7 +357,7 @@ label c29:
         linear 0.2, function pos30
     $ current_pos = 29
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -369,7 +369,7 @@ label c30:
         linear 0.2, function pos31
     $ current_pos = 30
     $ minigame("medium")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())
@@ -381,7 +381,7 @@ label c31:
         linear 0.2, function pos32
     $ current_pos = 31
     $ minigame("hard")
-    if score >= 15:
+    if score >= 10:
         "¡Felicitaciones, has ganado!"
         jump win
     $ movement(fullboard[current_pos], diceRoll())

@@ -1,0 +1,178 @@
+board.rpy
+board.rpyc
+config.rpy
+config.rpyc
+functions.rpy
+functions.rpyc
+gui.rpy
+gui.rpyc
+math.rpy
+math.rpyc
+memory.rpy
+memory.rpyc
+options.rpy
+options.rpyc
+screens.rpy
+screens.rpyc
+script.rpy
+script.rpyc
+verbal.rpy
+verbal.rpyc
+audio\bgm.mp3
+audio\diceroll.mp3
+audio\diceshake.mp3
+audio\no.ogg
+audio\ok.ogg
+audio\skip.ogg
+audio\yes.ogg
+cache\bytecode.rpyb
+cache\pyanalysis.rpyb
+cache\screens.rpyb
+gui\frame.png
+gui\game_menu.png
+gui\main_menu.png
+gui\namebox.png
+gui\notify.png
+gui\nvl.png
+gui\skip.png
+gui\textbox.png
+gui\window_icon.png
+gui\bar\bottom.png
+gui\bar\left.png
+gui\bar\right.png
+gui\bar\top.png
+gui\button\check_foreground.png
+gui\button\check_selected_foreground.png
+gui\button\choice_hover_background.png
+gui\button\choice_idle_background.png
+gui\button\hover_background.png
+gui\button\idle_background.png
+gui\button\quick_hover_background.png
+gui\button\quick_idle_background.png
+gui\button\radio_foreground.png
+gui\button\radio_selected_foreground.png
+gui\button\slot_hover_background.png
+gui\button\slot_idle_background.png
+gui\overlay\confirm.png
+gui\overlay\game_menu.png
+gui\overlay\main_menu.png
+gui\phone\nvl.png
+gui\phone\textbox.png
+gui\phone\bar\bottom.png
+gui\phone\bar\left.png
+gui\phone\bar\right.png
+gui\phone\bar\top.png
+gui\phone\button\check_foreground.png
+gui\phone\button\check_selected_foreground.png
+gui\phone\button\choice_hover_background.png
+gui\phone\button\choice_idle_background.png
+gui\phone\button\hover_background.png
+gui\phone\button\idle_background.png
+gui\phone\button\radio_foreground.png
+gui\phone\button\radio_selected_foreground.png
+gui\phone\button\slot_hover_background.png
+gui\phone\button\slot_idle_background.png
+gui\phone\overlay\game_menu.png
+gui\phone\overlay\main_menu.png
+gui\phone\scrollbar\horizontal_hover_bar.png
+gui\phone\scrollbar\horizontal_hover_thumb.png
+gui\phone\scrollbar\horizontal_idle_bar.png
+gui\phone\scrollbar\horizontal_idle_thumb.png
+gui\phone\scrollbar\vertical_hover_bar.png
+gui\phone\scrollbar\vertical_hover_thumb.png
+gui\phone\scrollbar\vertical_idle_bar.png
+gui\phone\scrollbar\vertical_idle_thumb.png
+gui\phone\slider\horizontal_hover_bar.png
+gui\phone\slider\horizontal_hover_thumb.png
+gui\phone\slider\horizontal_idle_bar.png
+gui\phone\slider\horizontal_idle_thumb.png
+gui\phone\slider\vertical_hover_bar.png
+gui\phone\slider\vertical_hover_thumb.png
+gui\phone\slider\vertical_idle_bar.png
+gui\phone\slider\vertical_idle_thumb.png
+gui\scrollbar\horizontal_hover_bar.png
+gui\scrollbar\horizontal_hover_thumb.png
+gui\scrollbar\horizontal_idle_bar.png
+gui\scrollbar\horizontal_idle_thumb.png
+gui\scrollbar\vertical_hover_bar.png
+gui\scrollbar\vertical_hover_thumb.png
+gui\scrollbar\vertical_idle_bar.png
+gui\scrollbar\vertical_idle_thumb.png
+gui\slider\horizontal_hover_bar.png
+gui\slider\horizontal_hover_thumb.png
+gui\slider\horizontal_idle_bar.png
+gui\slider\horizontal_idle_thumb.png
+gui\slider\vertical_hover_bar.png
+gui\slider\vertical_hover_thumb.png
+gui\slider\vertical_idle_bar.png
+gui\slider\vertical_idle_thumb.png
+images\board.png
+images\passticket_hover.png
+images\passticket_idle.png
+images\sea.png
+images\sky.png
+images\comprension\libro 1.jpg
+images\comprension\libro 10.jpg
+images\comprension\libro 11.jpg
+images\comprension\libro 12.jpg
+images\comprension\libro 2.jpg
+images\comprension\libro 3.jpg
+images\comprension\libro 4.jpg
+images\comprension\libro 5.jpg
+images\comprension\libro 6.jpg
+images\comprension\libro 7.jpg
+images\comprension\libro 8.jpg
+images\comprension\libro 9.jpg
+images\dice\dice 1.png
+images\dice\dice 2.png
+images\dice\dice 3.png
+images\dice\dice 4.png
+images\dice\dice 5.png
+images\dice\dice 6.png
+images\dice\dice.clip
+images\math\area1.png
+images\math\area10.png
+images\math\area2.png
+images\math\area3.png
+images\math\area4.png
+images\math\area5.png
+images\math\area6.png
+images\math\area7.png
+images\math\area8.png
+images\math\area9.png
+images\memory\memory1.jpg
+images\memory\memory2.jpg
+images\memory\memory3.jpg
+images\memory\memory4.jpg
+images\memory\memory5.jpg
+images\memory\memory6.jpg
+images\memory\memoryback.jpg
+images\pieces\peon 1.png
+images\pieces\peon 2.png
+images\pieces\peon 3.png
+images\pieces\peon 4.png
+images\pieces\peon 5.png
+images\pieces\peon 6.png
+images\pieces\peon 7.png
+images\pieces\peon 8.png
+minigames\math\areas.txt
+minigames\math\conversiones.txt
+minigames\math\factorizacion.txt
+minigames\math\romanos.txt
+minigames\reading\comprension.txt
+minigames\reading\verbal.txt
+saves\_reload-2-LT1.save
+saves\auto-1-LT1.save
+saves\auto-10-LT1.save
+saves\auto-2-LT1.save
+saves\auto-3-LT1.save
+saves\auto-4-LT1.save
+saves\auto-5-LT1.save
+saves\auto-6-LT1.save
+saves\auto-7-LT1.save
+saves\auto-8-LT1.save
+saves\auto-9-LT1.save
+saves\navigation.json
+saves\persistent
+tl\None\common.rpym
+tl\None\common.rpymc

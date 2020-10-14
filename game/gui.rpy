@@ -23,7 +23,7 @@ init python:
 ## Los colores del texto de la interfaz
 
 ## El color enfatizado usado en la interfaz para subrayar texto.
-define gui.accent_color = '#00cc99'
+define gui.accent_color = '#FFFFFF'
 
 ## El color del botón de texto cuando no está seleccionado ni enfocado.
 define gui.idle_color = '#888888'
@@ -78,7 +78,7 @@ define gui.label_text_size = 24
 define gui.notify_text_size = 16
 
 ## El tamaño del título del juego.
-define gui.title_text_size = 50
+define gui.title_text_size = 80
 
 
 ## Menú principal y menús del juego ############################################
@@ -98,7 +98,8 @@ define gui.textbox_height = 185
 
 ## Colocación vertical de la caja de texto en la pantalla. 0.0 para la parte
 ## superior, 0.5 para el centro y 1.0 para la parte inferior.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.8
+define gui.textbox_xalign = 0.38
 
 
 ## Colocación del nombre del personaje hablante, relativa a la caja de texto.

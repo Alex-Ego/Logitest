@@ -27,6 +27,7 @@ image dice roll:
 
 label show_tickets:
     $ tickets = True
+    play sound "audio/ok.ogg"
     show screen tickets
     "¡Obtuviste un ticket de pase!"
     
@@ -75,7 +76,7 @@ init -5 python:
             "medium": "media",
             "hard": "difícil"
         }.get(diff)
-        renpy.say(None, "Toca un ejercicio de dificultad " + diff_esp + ".")
+        renpy.say(None, "Te toca responder un ejercicio de dificultad " + diff_esp + ".")
         renpy.hide("dice")
         if diff == "easy":
             minigame_pool = ["math_incisos(\"easy\")", "verbal_incisos()"]
@@ -87,11 +88,16 @@ init -5 python:
         if answer == False:
             if tickets == True:
                 tickets = False
+                renpy.play("audio/skip.ogg")
                 renpy.say(None, "Te equivocaste, pero por suerte tenías un ticket. No perderás puntos.")
             else:
+                renpy.play("audio/no.ogg")
                 renpy.say(None, "Te equivocaste...")
                 score = score - 1
+                if score < 0:
+                    score = 0
         else:
+            renpy.play("audio/yes.ogg")
             renpy.say(None, "¡Correcto!")
             score = score + 1
         renpy.call("score_counting")
