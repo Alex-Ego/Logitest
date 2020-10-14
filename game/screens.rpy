@@ -160,6 +160,24 @@ style say_dialogue:
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
+## Pantalla de tickets #########################################################
+##
+## Pantalla que mostrará si tienes tickets y cuando los puedas usar
+##
+##
+##
+##
+##
+##
+
+screen tickets():
+    zorder -10
+    if tickets:
+        hbox xoffset 150 yalign .7:
+            imagebutton auto "passticket_%s.png" action None
+            
+default tickets = False
+    
 
 ## Pantalla de introducción de texto ###########################################
 ##

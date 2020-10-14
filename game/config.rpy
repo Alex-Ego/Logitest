@@ -4,7 +4,7 @@
 
 ## La sentencia 'init offset' da preferencia a las sentencias de inicialización
 ## de este archivo respecto a otros archivos.
-init offset = -2
+init offset = -20
 
 init python:
     
@@ -18,3 +18,7 @@ init python:
         return s
     
     config.replace_text = replace_text
+    
+    # Initial score for the player
+    score = 0
+    tickets = False
